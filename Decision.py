@@ -1,7 +1,7 @@
 def decision(age,income,creditScore,employment):
 
   #invalid input
-  if not (18<= game <=65):
+  if not (18<= age <=65):
     return "Invalid Input"
   if not (5.0 <= income<= 500.0):
     return "Invalid Input"
@@ -12,13 +12,13 @@ def decision(age,income,creditScore,employment):
 
   #risk
   if 300<= creditScore <= 500:
-    risk = high
+    risk = "high"
   elif 501 <= creditScore <= 700:
-    risk = medium
+    risk = "medium"
   else :
     risk = "low"
 
-  if risk = "high":
+  if risk == "high":
   return "Reject"
   if income < 15:
     if employment == 'C' and risk == "low":
@@ -71,6 +71,6 @@ for i, tc in enumerate(Test_case, start =1):
     passed +=1
   else:
     print(f"TC{i} Failed | expected = {expected}, got = {result}")
-print(f"\nPassed {pased}/{len(Test_case)} test case")
+print(f"\nPassed {passed}/{len(Test_case)} test case")
 
   
