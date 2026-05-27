@@ -19,7 +19,7 @@ def decision(age,income,creditScore,employment):
     risk = "low"
 
   if risk == "high":
-  return "Reject"
+    return "Reject"
   if income < 15:
     if employment == 'C' and risk == "low":
       return "Manual Review"
